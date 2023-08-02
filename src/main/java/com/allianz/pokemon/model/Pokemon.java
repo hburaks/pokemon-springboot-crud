@@ -9,5 +9,4 @@ public class Pokemon {
     String name;
     int power;
     PokemonTypeEnum pokemonTypeEnum;
-
 }

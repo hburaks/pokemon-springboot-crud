@@ -9,5 +9,4 @@ import java.util.List;
 public interface GymEntityRepository extends JpaRepository<GymEntity, Long> {
 
     public List<GymEntity> getByEstablishDateIsLessThanEqualOrderByEstablishDateDesc(int date);
-
 }

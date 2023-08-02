@@ -12,9 +12,11 @@ import java.util.List;
 public class PokemonService {
     @Autowired
     PokemonEntityRepository pokemonEntityRepository;
-public List<PokemonEntity> getPokemonEntities(){
-    return pokemonEntityRepository.findAll();
-}
+
+    public List<PokemonEntity> getPokemonEntities() {
+        return pokemonEntityRepository.findAll();
+    }
+
     public List<PokemonEntity> getPokemonByNameStartsWith(String name) {
         List<PokemonEntity> pokemonEntities = pokemonEntityRepository.getPokemonEntityByNameStartingWith(name);
         return pokemonEntities;
@@ -25,7 +27,7 @@ public List<PokemonEntity> getPokemonEntities(){
         return pokemonEntities;
     }
 
-    public PokemonEntity createPokemon(String name, int power, PokemonTypeEnum pokemonTypeEnum){
+    public PokemonEntity createPokemon(String name, int power, PokemonTypeEnum pokemonTypeEnum) {
         PokemonEntity pokemonEntity = new PokemonEntity();
         pokemonEntity.setName(name);
         pokemonEntity.setPower(power);

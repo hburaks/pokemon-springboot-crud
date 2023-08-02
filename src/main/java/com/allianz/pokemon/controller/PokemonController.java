@@ -40,6 +40,4 @@ public class PokemonController {
         );
         return new ResponseEntity<>(pokemon, HttpStatus.CREATED);
     }
-    //TODO: If type enum creates conflict, use PokemonTypeEnum pokemonTypeEnum = PokemonTypeEnum.value.of()
-
 }
