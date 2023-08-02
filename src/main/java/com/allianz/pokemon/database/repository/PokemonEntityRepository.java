@@ -11,4 +11,6 @@ import java.util.List;
 public interface PokemonEntityRepository extends JpaRepository<PokemonEntity, Long>{
     public List<PokemonEntity> getPokemonEntityByNameStartingWith(String name);
     public List<PokemonEntity> getPokemonEntityByPokemonTypeEnum(PokemonTypeEnum pokemonTypeEnum);
+
+    public PokemonEntity getPokemonEntityByName(String name);
 }
